@@ -1,0 +1,76 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('./1.jpg') no-repeat center center;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  animation: fadeInDown 1.5s;
+}
+
+div {
+  margin: 25px 0;  /* Increased the margin */
+  animation: fadeInUp 1.5s;
+}
+
+label, input, div {
+  color: black  ;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgba(0, 123, 255, 0.8);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  animation: fadeInUp 1.5s;
+}
+
+button:hover {
+  background-color: rgba(0, 86, 179, 0.8);
+  transform: scale(1.05);
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
